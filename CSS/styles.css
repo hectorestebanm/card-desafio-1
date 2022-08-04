@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root
+{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);        
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Diseño Mobile Design */
+
+body
+{
+    font-size: 14px;
+    background-color: var(--Cream);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card
+{
+    width: 340px;
+    height: 590px;
+    margin: 10px auto 50px auto;
+    border: none;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.seccion-primero-image
+{
+    width: 100%;
+}
+
+.seccion-segundo
+{
+    padding: 10px;
+    background-color: var(--White);
+}
+
+.seccion-segundo-encabezado
+{
+    font-size: 12px;
+    margin: 10px;
+    color: var(--Dark-grayish-blue);
+    letter-spacing: 10px;
+}
+
+.seccion-segundo-titulo
+{
+    color: var(--Very-dark-blue);
+    margin: 10px;
+    line-height: 30px;
+    font-size: 32px;
+    font-family: 'Fraunces', serif;
+}
+
+.seccion-segundo-descripcion
+{
+    margin: 10px;
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.seccion-segundo-precio
+{
+    display: flex;
+    align-items: center;
+}
+
+.precio-descuento
+{
+    font-size: 30px;
+    margin: 10px;
+    color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
+}
+
+.precio-normal
+{
+    color: var(--Dark-grayish-blue);
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.seccion-segundo-button
+{
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.button-image
+{
+    margin-right: 10px;
+}
+
+.attribution
+{
+    font-size: 14px;
+    text-align: center;
+}
+
+.attribution a
+{
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* Diseño Mobile Design */
+
+@media (min-width: 768px)
+{
+    .card
+    {
+        margin-top: 50px;
+        display: flex;
+        width: 600px;
+        height: 400px;
+    }
+
+    .seccion-primero
+    {
+        width: 300px;
+    }
+
+    .seccion-primero-image
+    {
+        content: url(../images/image-product-desktop.jpg);
+    }
+
+    .seccion-segundo
+    {
+        width: 300px;
+    }
+
+    .seccion-segundo-encabezado
+    {
+        margin: 10px 20px;
+    }
+
+    .seccion-segundo-titulo
+    {
+        margin: 10px 20px;
+    }
+
+    .seccion-segundo-descripcion
+    {
+        margin: 10px 20px;
+    }
+
+    .seccion-segundo-precio
+    {
+        margin: 10px 20px;
+    }
+
+    .precio-descuento
+    {
+        margin: 10px 20px;
+    }
+
+    .precio-normal
+    {
+        margin: 10px 20px;
+    }
+}
